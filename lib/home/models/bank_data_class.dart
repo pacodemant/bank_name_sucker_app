@@ -31,24 +31,20 @@ class BankDataClass {
     required this.countryCode,
   });
 
-//NOTE -   factory BankDataClass.fromJson(Map<String, dynamic> json) {:
-//Hier wird eine Factory-Methode fromJson definiert, die verwendet wird,
-/// The comment `//um eine Weather-Instanz aus JSON-Daten zu erstellen.` is describing the purpose of
-/// the factory method `fromJson` in the `BankDataClass`. It explains that the factory method is used to
-/// create a `BankDataClass` instance from JSON data. This means that the factory method takes JSON data
-/// as input and constructs a new `BankDataClass` object based on that data.
-//um eine BankDataClass-Instanz aus JSON-Daten zu erstellen.
-//Eine Factory-Methode ist eine Methode, die ein Objekt erstellt und zurückgibt.
-
+//HINWEIS – Factory BankDataClass.fromJson(Map<String, Dynamic> json) {:
+/// Die Funktion ist ein Factory-Konstruktor in Dart, der eine JSON-Map in eine Instanz von a konvertiert
+/// BankDataClass.
+/// Argumente:
+///   jsonMap (Map<String, dynamisch>): Der „jsonMap“-Parameter in der „BankDataClass.fromJson“-Factory
+/// Die Methode ist eine Map, die Schlüssel-Wert-Paare enthält, 
+/// wobei die Schlüssel Zeichenfolgen und die Werte vom Typ sind„dynamisch“. 
+/// Diese Karte wird normalerweise verwendet, um die JSON-Daten darzustellen, 
+/// die in eine konvertiert werden müssen Instanz der `Bank
   factory BankDataClass.fromJson(Map<String, dynamic> jsonMap) {
         print(jsonMap);
 
     return BankDataClass(
       
-      // temperature: json['temp'],: 
-      //Hier wird der Wert des Map-Schlüssels 'temp' aus dem übergebenen JSON-Objekt (json) 
-      //genommen und in eine Gleitkommazahl umgewandelt. 
-      //Dieser Wert wird dann der temperature Instanzvariable zugewiesen.
       bankName: jsonMap['bank_name'],
       ibanNr: jsonMap['iban'],
       countryCode: jsonMap['country'],

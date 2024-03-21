@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
 /* -------------------------------------------------------------------------- */
-/*               //SECTION - für die API-Kommunikation via getWeather()       */
+/*               //SECTION - für die API-Kommunikation via getBankData()       */
 /*                           mit JSON, HTTP-Package                           */
 /* -------------------------------------------------------------------------- */
 

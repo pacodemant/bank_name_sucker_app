@@ -29,10 +29,10 @@ class _HomePageState extends State<HomePage> {
     );
 
     BankDataRepository().getBankData(bankData).then(
-      (weather) {
+      (bankData) {
         setState(
           () {
-            _bankData = weather;
+            _bankData = bankData;
             _isLoading = false;
             _bankEntered = true;
           },
